@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:id="@+id/aaaaa"
+        android:text="ID : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_alignBottom="@id/aaaaa"
+        android:layout_toRightOf="@id/aaaaa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_alignLeft="@id/aaaaa"
+        android:id="@+id/bbbbb"
+        android:layout_below="@id/aaaaa"
+        android:textSize="30dp"
+        android:text="PW : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_alignBaseline="@+id/bbbbb"
+        android:layout_toRightOf="@id/bbbbb"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_alignLeft="@id/bbbbb"
+        android:layout_below="@id/bbbbb"
+        android:text="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
