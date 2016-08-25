@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.b.a02_widget.MainActivity">
+
+    <Button
+    android:textAllCaps="false"
+    android:id="@+id/btnHello"
+    android:textColor="#f00"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:typeface="monospace"
+    android:textStyle="bold"
+    android:layout_width="100dp"
+    android:layout_height="300dp"
+    android:text="Hello World!" />
+
+    <CheckBox
+        android:id="@+id/myCheckBox"
+        android:text="checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/myRadio1"
+            android:text="radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/myRadio2"
+            android:text="radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/myRadio3"
+            android:text="radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:textAllCaps="false"
+        android:textOff="myToggle off"
+        android:textOn="myToggle on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/myEdit"
+        android:inputType="number"
+        android:hint="input here"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+     </EditText>
+
+    <EditText
+        android:ems="100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPassword"
+        android:text="abcd"/>
+
+</LinearLayout>
