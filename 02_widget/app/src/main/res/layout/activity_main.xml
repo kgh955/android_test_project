@@ -19,7 +19,7 @@
     android:typeface="monospace"
     android:textStyle="bold"
     android:layout_width="100dp"
-    android:layout_height="300dp"
+    android:layout_height="100dp"
     android:text="Hello World!" />
 
     <CheckBox
