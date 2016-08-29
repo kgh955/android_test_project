@@ -16,4 +16,11 @@
         android:layout_height="wrap_content"
         android:text="Hello World"/>
 
+    <ProgressBar
+        android:id="@+id/prograssBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
