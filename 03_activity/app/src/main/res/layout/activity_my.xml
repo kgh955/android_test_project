@@ -6,8 +6,6 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:background="F00"
-    >
+    android:paddingTop="16dp">
 
 </RelativeLayout>
