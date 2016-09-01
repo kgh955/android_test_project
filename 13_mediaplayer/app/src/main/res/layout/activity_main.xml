@@ -9,8 +9,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.b.a13_mediaplayer.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btnPlay"
+        android:onClick="onPlayClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="PLAY" />
+
+    <Button
+        android:layout_toRightOf="@id/btnPlay"
+        android:id="@+id/btnStop"
+        android:onClick="onPlayClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP" />
+
 </RelativeLayout>
