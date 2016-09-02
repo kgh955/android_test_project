@@ -19,9 +19,15 @@
     <Button
         android:layout_toRightOf="@id/btnPlay"
         android:id="@+id/btnStop"
-        android:onClick="onPlayClick"
+        android:onClick="onStopClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STOP" />
+
+    <SeekBar
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
