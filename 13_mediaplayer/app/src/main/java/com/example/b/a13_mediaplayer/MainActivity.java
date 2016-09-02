@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(mp != null) {
             mp.stop();
-            mp.release();
+            mp.release();// actually this command takes time a little bit to change to end state.
             mp = null;
         }
     }
