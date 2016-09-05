@@ -4,18 +4,20 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.BatteryManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-
+            int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
+            Toast.makeText(context, "batt : "+level, Toast.LENGTH_LONG).show();
         }
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
