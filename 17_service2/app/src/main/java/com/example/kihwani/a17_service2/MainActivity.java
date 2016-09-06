@@ -7,6 +7,7 @@ import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     boolean isBind;
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnClick(View v) {
         int number = myService.getRandomNumber();
+        Toast.makeText(MainActivity.this, "random : "+number, Toast.LENGTH_LONG).show();
+
+        MyIntentService2.startActionFoo(MainActivity.this, "a", "b");
     }
 
 }
