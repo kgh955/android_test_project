@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,11 +49,8 @@ public class MainActivity extends AppCompatActivity {
         unregisterReceiver(receiver);
     }
 
-    public void onSendClick(VIew v){
-        Intent intent = new Intent("abcedf");
+    public void onSendClick(View v){
+        Intent intent = new Intent("abcdef");
         sendBroadcast(intent);
     }
-
-
-
 }
