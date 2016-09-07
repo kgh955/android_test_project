@@ -9,8 +9,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.kihwani.a20_fragment2.MainActivity">
 
-    <TextView
+    <Button
+        android:onClick="onBtnClick"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Add" />
+    <Button
+        android:onClick="onBtnClick"
+        android:layout_toRightOf="@id/btnAdd"
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove" />
+    <Button
+        android:onClick="onBtnClick"
+        android:layout_toRightOf="@id/btnRemove"
+        android:id="@+id/btnReplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="replace" />
+    <Button
+        android:onClick="onBtnClick"
+        android:layout_toRightOf="@id/btnReplace"
+        android:id="@+id/btnHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hide" />
+
+    <FrameLayout
+        android:layout_below="@id/btnAdd"
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
 </RelativeLayout>
