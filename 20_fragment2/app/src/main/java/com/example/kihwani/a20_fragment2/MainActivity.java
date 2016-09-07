@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     BlankFragment bf = new BlankFragment();
                     FragmentTransaction tr = fm.beginTransaction();//
                     tr.add(R.id.frame, bf, "counter");
+                    tr.commit();
                 }
                 break;
 
