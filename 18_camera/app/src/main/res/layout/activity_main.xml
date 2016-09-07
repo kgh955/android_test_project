@@ -17,6 +17,8 @@
         android:text="Hello World!" />
 
     <ImageView
+        android:scaleType="fitCenter"
+        android:src="@drawable/test_pic"
         android:layout_below="@id/btn"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
